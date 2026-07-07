@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="../assets/logo.svg" width="180" alt="OpenQSL Logo">
+</p>
+
 # OpenQSL Philosophy
 
 This document describes the philosophy and guiding principles behind the OpenQSL project.

@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/logo.svg" width="180" alt="OpenQSL Logo">
+</p>
+
 # OpenQSL Specification
 
 **Version:** 0.1 (Draft)
