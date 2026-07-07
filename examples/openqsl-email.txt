@@ -1,0 +1,27 @@
+From: JA1*** ja1***@example.com
+To: JA2*** ja2***@example.com
+Subject: OpenQSL Confirmation
+OpenQSL-Version: 0.1
+
+OpenQSL Confirmation
+
+Sender Callsign : JA1***
+Receiver Callsign : JA2***
+
+QSO Date : 2026-07-07
+QSO Time : 12:34 UTC
+
+Band : 20m
+Frequency : 14.074 MHz
+Mode : FT8
+
+RST Sent : -10 dB
+RST Received : -12 dB
+
+Grid Locator : PM95
+Operator Name : Taro Yamada
+
+Comment : Thank you for the QSO.
+
+73,
+JA1***

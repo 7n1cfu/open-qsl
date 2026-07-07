@@ -1,0 +1,11 @@
+From: JA1*** <ja1***@example.com>
+To: JA2*** <ja2***@example.com>
+Subject: OpenQSL Confirmation
+OpenQSL-Version: 0.1
+
+Sender Callsign : JA1***
+Receiver Callsign : JA2***
+Date : 2026-07-07
+Time : 12:34 UTC
+Band : 20m
+Mode : FT8

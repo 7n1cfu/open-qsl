@@ -1,0 +1,27 @@
+{
+    "version": "0.1",
+    "messageType": "qslConfirmation",
+
+    "sender": {
+        "callsign": "JA1***",
+        "email": "ja1***@example.com"
+    },
+
+    "receiver": {
+        "callsign": "JA2***",
+        "email": "ja2***@example.com"
+    },
+
+    "qso": {
+        "dateTime": "2026-07-07T12:34:56Z",
+        "band": "20m",
+        "frequencyMHz": 14.074,
+        "mode": "FT8",
+
+        "reportSent": "-10 dB",
+        "reportReceived": "-12 dB",
+
+        "comment": "Thank you for the QSO."
+
+    }
+}
