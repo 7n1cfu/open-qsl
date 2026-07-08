@@ -4,6 +4,8 @@
 
 ## 1. What is OpenQSL?
 
+![WhatIsOpenQSL.png](assets/WhatIsOpenQSL.png)
+
 **OpenQSL** is an open specification for exchanging amateur radio QSL confirmations using existing Internet infrastructure.
 
 OpenQSL is **not** a service, **not** a website, and **not** operated by any organization. It is an open, vendor-neutral specification that anyone can implement without relying on a particular organization.
@@ -14,7 +16,7 @@ Just as SMTP standardized email and HTTP standardized the Web, OpenQSL aims to p
 
 ## 2. Why OpenQSL?
 
-![Open QSL Comic](assets/open-qsl-comic.png)
+![WhyOpenQSL.png](assets/WhyOpenQSL.png)
 
 Traditional QSL systems have served the amateur radio community for many years, but they also present several challenges.
 
@@ -28,6 +30,8 @@ OpenQSL aims to provide a simple and open alternative by leveraging only the exi
 ---
 
 ## 3. Design Goals
+
+![DesignGoals.png](assets/DesignGoals.png)
 
 ### 3.1. Principles
 OpenQSL is designed with the following principles:
@@ -94,6 +98,8 @@ No dedicated OpenQSL server is required.
 ---
 
 ## 4. Project Status
+
+![ProjectStatus.png](assets/ProjectStatus.png)
 
 This project is currently in the proposal stage.
 The initial goal is to discuss, refine, and publish an open specification before developing software implementations.
