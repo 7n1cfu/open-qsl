@@ -2,37 +2,39 @@
   <img src="assets/logo.svg" width="180" alt="OpenQSL Logo">
 </p>
 
-# OpenQSL
+## 1. What is OpenQSL?
 
 **OpenQSL** is an open specification for exchanging amateur radio QSL confirmations using existing Internet infrastructure.
 
-OpenQSL is **not** a service, **not** a website, and **not** operated by any organization. It is an open, vendor-neutral specification that anyone can implement.
+OpenQSL is **not** a service, **not** a website, and **not** operated by any organization. It is an open, vendor-neutral specification that anyone can implement without relying on a particular organization.
 
-
-![Open QSL Comic](assets/open-qsl-comic.png)
+Just as SMTP standardized email and HTTP standardized the Web, OpenQSL aims to provide a simple, open, and interoperable specification for electronic QSL exchange.
 
 ---
 
-## Why OpenQSL?
+## 2. Why OpenQSL?
+
+![Open QSL Comic](assets/open-qsl-comic.png)
 
 Traditional QSL systems have served the amateur radio community for many years, but they also present several challenges.
 
-* Paper QSL cards require printing, postage, storage, and forwarding.
+* Paper QSL cards require printing, postage, storage, and forwarding through a bureau (bureau system).
 * Existing electronic QSL systems often depend on specific organizations or centralized services.
 * Some systems require registration, membership, or operational costs.
 * Long-term operation depends on maintaining dedicated infrastructure.
 
-OpenQSL aims to provide a simple and open alternative by leveraging existing Internet services that millions of people already use every day.
+OpenQSL aims to provide a simple and open alternative by leveraging only the existing Internet services that people already use every day.
 
 ---
 
-## Design Goals
+## 3. Design Goals
 
-OpenQSL is designed with the following principles.
+### 3.1. Principles
+OpenQSL is designed with the following principles:
 
 * Open specification
 * Free to use
-* Vendor neutral
+* Vendor neutral (independent of specific organizations)
 * Server independent
 * Human readable
 * Machine readable
@@ -40,24 +42,20 @@ OpenQSL is designed with the following principles.
 * Easy to automate
 * Backward extensible
 
----
-
-## What OpenQSL Defines
+### 3.2. What OpenQSL Defines
 
 OpenQSL defines only the specification for exchanging QSL confirmations.
-
 The specification may include:
 
 * Message format
 * Required QSO information
 * Optional metadata
-* Attachment formats
+* Attachment file formats
+* Attached card formats
 * Versioning
 * Security recommendations
 
----
-
-## What OpenQSL Does NOT Define
+### 3.3. What OpenQSL Does NOT Define
 
 OpenQSL intentionally does **not** define:
 
@@ -71,12 +69,9 @@ OpenQSL intentionally does **not** define:
 
 These services may be implemented independently while remaining compatible with the OpenQSL specification.
 
----
-
-## Transport
+### 3.4. Transport
 
 OpenQSL is transport independent.
-
 Typical implementations may use:
 
 * Email (SMTP)
@@ -87,119 +82,65 @@ Typical implementations may use:
 
 Future transports may also be defined.
 
----
-
-## Example Workflow
+### 3.5. Example Workflow
 
 ```text
-Operator A
-      |
-      | OpenQSL message
-      V
-Existing Internet Service
-      |
-      V
-Operator B
+Operator A  --------------> Existing Internet Service ----> Operator B
+              OpenQSL Message
 ```
 
 No dedicated OpenQSL server is required.
 
 ---
 
-## Project Status
+## 4. Project Status
 
 This project is currently in the proposal stage.
-
 The initial goal is to discuss, refine, and publish an open specification before developing software implementations.
 
-Community feedback is welcome.
+Your participation, ideas, discussions, Issues, and Pull Requests are welcome.
 
 ---
 
-## Roadmap
-
-* Define the core specification
-* Define an email transport profile
-* Define a machine-readable format (JSON)
-* Publish reference examples
-* Develop reference implementations
-* Encourage adoption by amateur radio software developers
-
----
-
-## Contributing
-
-Ideas, discussions, Issues, and Pull Requests are welcome.
-
-The objective is to create an open specification that can be implemented by anyone without relying on a particular organization, vendor, or service provider.
-
----
-
-## License
+## 5. License
 
 This repository is released under the MIT License unless otherwise noted.
 
 ---
 
-## Vision
-
-OpenQSL is intended to become an open standard for exchanging amateur radio QSL confirmations.
-
-Just as SMTP standardized email and HTTP standardized the Web, OpenQSL aims to provide a simple, open, and interoperable specification for electronic QSL exchange.
-
----
-
-## Project Ownership
-
-OpenQSL was started as a personal initiative with a simple goal: to make the future of amateur radio QSL exchange more open, more accessible, and more sustainable.
-
-Although I hold an amateur radio license, I am not an active amateur radio operator.
-
-This project is motivated not by personal operating needs, but by an interest in open standards and the long-term future of the amateur radio community.
-
-From the beginning, OpenQSL has been intended as a community-driven specification rather than a personal project.
-
-I hope to invite contributors, reviewers, and maintainers from the amateur radio community as early as possible.
-
-As the project matures, I intend to transition its stewardship to the community so that OpenQSL can evolve independently of its original author.
-
-If you believe in the goals of OpenQSL and would like to help shape its future, your participation is warmly welcome.
-
----
-
-## Origin of the Idea
+## 6. Origin of the Idea
 
 The idea for OpenQSL began with a simple question from a friend:
 
 > "Could there be a better alternative to traditional paper QSL cards and today's electronic QSL systems?"
 
-That question led me to reconsider something that amateur radio operators already do during every contact: they accurately exchange their callsigns.
+That question led me to reconsider something that amateur radio operators already do during every contact: "accurately exchanging their callsigns."
+I realized that if operators used an email address formatted as `callsign@domainname` (for example, `JA1***@gmail.com`), exchanging an electronic QSL could become remarkably simple.
 
-One day, I realized that if operators used email addresses based on their callsigns
-
-for example, `JA1***@gmail.com` then exchanging an electronic QSL could become remarkably simple.
-
-A phrase such as:
+For example, at the end of a contact, saying:
 
 > "Let's exchange via gQSL."
 
-could simply mean:
+would simply mean:
 
-> "Please send your QSL confirmation to `JA1***@gmail.com`."
+> "Please send your QSL to `JA1***@gmail.com`."
 
-This observation inspired the original concept, which I informally called **gQSL**.
-
-As I explored the idea further, I realized that the concept should not depend on Gmail?or any other specific provider.
-
+This **gQSL** was the original concept.
+As I explored the idea further, I realized that the concept should not depend on Gmail or any other specific provider.
 The real value was not a particular service, but the possibility of defining an **open specification** that could operate over existing communication infrastructure.
-
 That realization became the foundation of **OpenQSL**.
-
-Today, OpenQSL is intentionally designed to be provider-neutral and transport-independent.
-
-While the original idea was inspired by Gmail, the specification is intended to work with any compatible email service or with future communication methods that follow the same open principles.
 
 ---
 
+## 7. Project Ownership
 
+OpenQSL was started as a personal initiative with a simple goal: to make the future of amateur radio more open, more accessible, and more sustainable.
 
+Actually, I hold an amateur radio license, but I am not an active radio operator.
+This project is motivated not by personal operating needs, but by an interest in open standards and the long-term future of the amateur radio community.
+
+From the beginning, OpenQSL has been intended as a community-driven specification rather than a personal project.
+I hope to invite contributors, reviewers, and maintainers from the amateur radio community as early as possible.
+As the project matures, I intend to transition its stewardship to the community so that OpenQSL can evolve independently of me as an individual.
+
+If you believe in the goals of OpenQSL and would like to help shape its future, your participation is warmly welcome.
