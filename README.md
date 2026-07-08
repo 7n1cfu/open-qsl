@@ -8,6 +8,9 @@
 
 OpenQSL is **not** a service, **not** a website, and **not** operated by any organization. It is an open, vendor-neutral specification that anyone can implement.
 
+
+![Open QSL Comic](assets/open-qsl-comic.png)
+
 ---
 
 ## Why OpenQSL?
