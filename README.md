@@ -1,6 +1,5 @@
-<p align="center">
-  <img src="assets/logo.svg" width="180" alt="OpenQSL Logo">
-</p>
+
+![OpenQSL.png](assets/OpenQSL.png)
 
 ## 1. What is OpenQSL?
 
@@ -116,6 +115,8 @@ This repository is released under the MIT License unless otherwise noted.
 
 ## 6. Origin of the Idea
 
+![OriginofIdea.png](assets/OriginofIdea.png)
+
 The idea for OpenQSL began with a simple question from a friend:
 
 > "Could there be a better alternative to traditional paper QSL cards and today's electronic QSL systems?"
@@ -139,6 +140,8 @@ That realization became the foundation of **OpenQSL**.
 ---
 
 ## 7. Project Ownership
+
+![ProjectOwnership.png](assets/ProjectOwnership.png)
 
 OpenQSL was started as a personal initiative with a simple goal: to make the future of amateur radio more open, more accessible, and more sustainable.
 
